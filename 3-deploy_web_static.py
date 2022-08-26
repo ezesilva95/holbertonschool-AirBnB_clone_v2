@@ -45,6 +45,9 @@ def do_deploy(archive_path):
 
 
 def deploy():
+    """
+    all the do_pack() function and store the path of the created archive
+    """
     archive_path = do_pack()
     if archive_path is None:
         return False
