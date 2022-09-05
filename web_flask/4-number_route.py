@@ -49,7 +49,7 @@ def python_text(text="is cool"):
 def text_if_int(n):
     """
     """
-    return "{:d} is a number".forat(n)
+    return "{:d} is a number".format(n)
 
 
 if __name__ == "__main__":
