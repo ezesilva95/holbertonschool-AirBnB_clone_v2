@@ -48,6 +48,11 @@ class DBStorage:
         """
         query on the current database session
         """
+        classes = {
+               'BaseModel': BaseModel, 'User': User, 'Place': Place,
+               'State': State, 'City': City, 'Amenity': Amenity,
+               'Review': Review
+              } 
         new_dict = {}
         if cls is None:
             for my_type in classes.keys():
